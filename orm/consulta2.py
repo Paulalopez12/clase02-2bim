@@ -6,7 +6,6 @@ session = Session()
 series = session.query(Serie).all()
 
 # titulo de la serie promedio de edades y ahora cuantos premios tiene esa serie
-print("--- CONSULTA 2 ---")
 for s in series:
     promedio = s.obtener_edad_actores()
     cantidad_premios = s.obtener_premios_serie()
